@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './components/Header'
 import Cards from './components/Cards'
 import './App.css';
 
@@ -72,15 +73,47 @@ class App extends Component {
           {
             title: 'Print Systems',
             text: 'Brand systems provide a cohesive ecosystem. For users to implement a consistent brand language and motif for all material and digital needs.',
+          },
+          {
+            title: 'Sprint / Strategy',
+            text: 'Brand systems provide a cohesive ecosystem. For users to implement a consistent brand language and motif for all material and digital needs.',
           }
         ]
-      }
+      },
+      {
+      id: 4,
+      type: 'Icon',
+      title: 'Current Dev loadout',
+      images: [
+          {
+            link: '/static/media/illustrator.8670d30b.svg',
+            alt: 'cool-stuff1'
+          },
+          {
+            link: '',
+            alt: 'cool-stuff2'
+          },
+          {
+            link: '"link"',
+            alt: 'cool-stuff3'
+          },
+          {
+            link: '"link"',
+            alt: 'cool-stuff4'
+          },
+          {
+            link: '"link"',
+            alt: 'cool-stuff5'
+          }
+       ]
+      },
     ]
   }
 
   render() {
     return (
       <div className="App">
+        <Header />
         <Cards cards={this.state.cards} />
       </div>
     );
